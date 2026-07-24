@@ -60,7 +60,7 @@ fn read_bytes(file: &mut File, offset: u64, size: usize) -> Vec<u8> {
 
 fn main() {
     // 请根据你的 Neo4j 数据目录修改
-    let data_dir = Path::new("D:\\neo4j\\data\\databases\\neo4j");
+    let data_dir = &Path::new("C:/Users/zzy52/neo4j_data_backup/databases/neo4j");
     let node_path = data_dir.join("neostore.nodestore.db");
     let rel_path = data_dir.join("neostore.relationshipstore.db");
 
